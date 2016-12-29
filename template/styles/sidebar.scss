@@ -31,8 +31,6 @@
 		a{
 			font-family: $fonts;
 			text-decoration: none;
-			display: flex;
-			flex-direction: column;
 			color: $gray;
 
 			span{
@@ -46,6 +44,7 @@
 					font-weight: 400;
 					font-size: 0.55em;
 					color: $gray-light;
+					white-space: nowrap;
 				}
 			}
 		}
