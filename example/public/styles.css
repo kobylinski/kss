@@ -14,11 +14,11 @@ body, html { height: 100%; width: 100%; padding: 0; margin: 0; font-family: "Ope
 
 .kss-sidebar > nav { height: 100%; }
 
-.kss-sidebar > nav a { font-family: "Open Sans", sans-serif; text-decoration: none; display: flex; flex-direction: column; color: #444; }
+.kss-sidebar > nav a { font-family: "Open Sans", sans-serif; text-decoration: none; color: #444; }
 
 .kss-sidebar > nav a span:nth-child(1) { font-size: 0.8em; line-height: 0.9; font-weight: 400; }
 
-.kss-sidebar > nav a span:nth-child(2) { font-weight: 400; font-size: 0.55em; color: #999; }
+.kss-sidebar > nav a span:nth-child(2) { font-weight: 400; font-size: 0.55em; color: #999; white-space: nowrap; }
 
 .kss-sidebar > nav .kss-depth-0 a { color: #ccc; }
 
@@ -62,7 +62,7 @@ body, html { height: 100%; width: 100%; padding: 0; margin: 0; font-family: "Ope
 
 .kss-content .kss-description a { color: #ff8a00; }
 
-.kss-content .kss-modifier-block { padding: 2em; background-color: #fff; }
+.kss-content .kss-modifier-block { margin-top: 1em; padding: 2em; background-color: #fff; }
 
 .kss-content .kss-modifier-block .kss-modifier { padding: 1em 0 1em 0; }
 
