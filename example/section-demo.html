@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	    <meta name="HandheldFriendly" content="true">
+	    <meta name="MobileOptimized" content="320">
+    	<title></title>
+    	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    	<link rel="stylesheet" href="public/styles.css" />
+    	<link rel="stylesheet" href="../node_modules/kss/demo/styles.css">
+
+	</head>
+	<body id="kss-node">
+		<div class="kss-wrapper">
+			<div class="kss-content">
+          				<section id="demo">
+            				<h1 class="kss-title">
+        					 	Demo <span class="kss-ref">#demo</span>
+        					</h1>
+	            					<div class="kss-description">
+	              						<p>The source files for this demo can be found in the
+<a href="https://github.com/kss-node/kss-node/tree/master/demo">demo folder</a> on
+GitHub.</p>
+
+	            					</div>
+	          			</section>
+          				<section id="demo.mixins">
+            				<h1 class="kss-title">
+        					 	Mixins <span class="kss-ref">#demo.mixins</span>
+        					</h1>
+	            					<div class="kss-description">
+	              						<p>LESS mixins used in this demo.</p>
+
+	            					</div>
+	          			</section>
+          				<section id="demo.mixins.button-colorize">
+            				<h1 class="kss-title">
+        					 	.button-colorize(@color) <span class="kss-ref">#demo.mixins.button-colorize</span>
+        					</h1>
+	            					<div class="kss-description">
+	              						<p>Creates button styling with the specified color.</p>
+
+	            					</div>
+	          			</section>
+          				<section id="demo.mixins.example">
+            				<h1 class="kss-title">
+        					 	.colors(@bg, @color) <span class="kss-ref">#demo.mixins.example</span>
+        					</h1>
+	            					<div class="kss-description">
+	              						<p>Applies foreground and background colors.</p>
+
+	            					</div>
+	          			</section>
+          				<section id="demo.components">
+            				<h1 class="kss-title">
+        					 	Components <span class="kss-ref">#demo.components</span>
+        					</h1>
+	            					<div class="kss-description">
+	              						<p>Reusable components that can be used across the site.
+So far this just includes buttons.</p>
+
+	            					</div>
+	          			</section>
+          				<section id="demo.components.buttons">
+            				<h1 class="kss-title">
+        					 	Buttons <span class="kss-ref">#demo.components.buttons</span>
+        					</h1>
+						            <div class="kss-description">
+										<p>A majority of buttons in the site are built from the same base class.</p>
+
+						            </div>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<a href="#" class="button [modifier class]">Link Button</a>
+<button class="button [modifier class]">Button Element</button>
+<input type="button" class="button [modifier class]" value="input[type='button']"/>
+
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.primary</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class to indicate that the button is the primary feature of this form.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button primary">Link Button</a>
+<button class="button primary">Button Element</button>
+<input type="button" class="button primary" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.remove</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class to indicate that the button will remove a feature, or other negative connotations.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button remove">Link Button</a>
+<button class="button remove">Button Element</button>
+<input type="button" class="button remove" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:hover</div>
+		                  						<div class="kss-modifier-description">
+		                    						Highlight the button when hovered.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button pseudo-class-hover">Link Button</a>
+<button class="button pseudo-class-hover">Button Element</button>
+<input type="button" class="button pseudo-class-hover" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:disabled</div>
+		                  						<div class="kss-modifier-description">
+		                    						Make the button change appearance to reflect it being disabled.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button pseudo-class-disabled">Link Button</a>
+<button class="button pseudo-class-disabled">Button Element</button>
+<input type="button" class="button pseudo-class-disabled" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:active</div>
+		                  						<div class="kss-modifier-description">
+		                    						&quot;Press&quot; the button down when clicked.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button pseudo-class-active">Link Button</a>
+<button class="button pseudo-class-active">Button Element</button>
+<input type="button" class="button pseudo-class-active" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html">&lt;a href=&quot;#&quot; class=&quot;button [modifier class]&quot;&gt;Link Button&lt;/a&gt;
+&lt;button class=&quot;button [modifier class]&quot;&gt;Button Element&lt;/button&gt;
+&lt;input type=&quot;button&quot; class=&quot;button [modifier class]&quot; value=&quot;input[type=&#x27;button&#x27;]&quot;/&gt;
+</code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="demo.forms">
+            				<h1 class="kss-title">
+        					 	Forms <span class="kss-ref">#demo.forms</span>
+        					</h1>
+						            <div class="kss-description">
+										<p>Covers styles used for forms, such as the <code>&lt;input&gt;</code> and <code>&lt;select&gt;</code> elements.</p>
+
+						            </div>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<form>
+<p><input type="text" class="" value="Text input"/></p>
+<div class="mod-input text ">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+
+<p>
+<a href="#" class="button ">Link Button</a>
+<button class="button ">Button Element</button>
+<input type="button" class="button " value="input[type='button']"/>
+</p>
+</form>
+
+	                					</div>
+	              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html">&lt;form&gt;
+&lt;p&gt;&lt;input type=&quot;text&quot; class=&quot;&quot; value=&quot;Text input&quot;/&gt;&lt;/p&gt;
+&lt;div class=&quot;mod-input text &quot;&gt;
+  &lt;label&gt;Text Label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;&quot; value=&quot;Text input&quot;/&gt;&lt;/div&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;#&quot; class=&quot;button &quot;&gt;Link Button&lt;/a&gt;
+&lt;button class=&quot;button &quot;&gt;Button Element&lt;/button&gt;
+&lt;input type=&quot;button&quot; class=&quot;button &quot; value=&quot;input[type=&#x27;button&#x27;]&quot;/&gt;
+&lt;/p&gt;
+&lt;/form&gt;
+</code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="demo.forms.text">
+            				<h1 class="kss-title">
+        					 	Text Input <span class="kss-ref">#demo.forms.text</span>
+        					</h1>
+	            					<div class="kss-description">
+	              						<p>Below are the text-oriented form elements used on the site.</p>
+
+	            					</div>
+	          			</section>
+          				<section id="demo.forms.text.single-line">
+            				<h1 class="kss-title">
+        					 	Single-Line Text Boxes <span class="kss-ref">#demo.forms.text.single-line</span>
+        					</h1>
+						            <div class="kss-description">
+										<p>Your standard, everyday text boxes.</p>
+
+						            </div>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<input type="text" class="[modifier class]" value="Text input"/>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:hover</div>
+		                  						<div class="kss-modifier-description">
+		                    						Highlight the text box when hovering
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<input type="text" class="pseudo-class-hover" value="Text input"/>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:focus</div>
+		                  						<div class="kss-modifier-description">
+		                    						Similar to <code>:hover</code>, however it should demand more attention than when an input is simply hovered.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<input type="text" class="pseudo-class-focus" value="Text input"/>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:disabled</div>
+		                  						<div class="kss-modifier-description">
+		                    						When disabled, the input&#39;s appearance should reflect as such.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<input type="text" class="pseudo-class-disabled" value="Text input"/>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html">&lt;input type=&quot;text&quot; class=&quot;[modifier class]&quot; value=&quot;Text input&quot;/&gt;</code></pre>
+									</div>
+	            				</div>
+	          			</section>
+          				<section id="demo.forms.text.label-pairs">
+            				<h1 class="kss-title">
+        					 	Label/Text box Pairs <span class="kss-ref">#demo.forms.text.label-pairs</span>
+        					</h1>
+						            <div class="kss-description">
+										<p>All labelled text boxes should be included in a wrapper <code>&lt;div&gt;</code> element for
+both layout convenience and specific styling.</p>
+
+						            </div>
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						<div class="mod-input text [modifier class]">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+	                					</div>
+	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.disabled</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class when the text input inside is expected to be disabled.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="mod-input text disabled">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.invalid</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class if the input has failed a validation check.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="mod-input text invalid">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.valid</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class if the input has passed a validation check (intended for live validation in particular).
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="mod-input text valid">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+		                					</div>
+		              					</div>
+									<div class="kss-markup">
+										<pre><code class="lang-html">&lt;div class=&quot;mod-input text [modifier class]&quot;&gt;
+  &lt;label&gt;Text Label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;&quot; value=&quot;Text input&quot;/&gt;&lt;/div&gt;</code></pre>
+									</div>
+	            				</div>
+	          			</section>
+			</div>
+			<div class="kss-sidebar">
+				<nav>
+					<ul>
+						<li class="homepage kss-depth-0">
+							<a href="./">
+								<span>Home</span>
+							</a>
+						</li>
+					        <li class="kss-depth-0">
+					        	<a href="section-spec.html">
+						        	<span>KSS Spec</span>
+						        	<span>spec</span>
+					        	</a>
+				        	</li>
+					        <li class="kss-depth-0">
+					        	<a href="section-javascript-api.html">
+						        	<span>JavaScript API</span>
+						        	<span>javascript-api</span>
+					        	</a>
+				        	</li>
+					        <li class="kss-depth-0 active">
+					        	<a href="section-demo.html">
+						        	<span>Demo</span>
+						        	<span>demo</span>
+					        	</a>
+				        	</li>
+									<li class="kss-depth-2">
+										<a href="#demo.mixins">
+											<span>Mixins</span>
+											<span>demo.mixins</span>
+										</a>
+									</li>
+									<li class="kss-depth-3">
+										<a href="#demo.mixins.button-colorize">
+											<span>.button-colorize(@color)</span>
+											<span>demo.mixins.button-colorize</span>
+										</a>
+									</li>
+									<li class="kss-depth-3">
+										<a href="#demo.mixins.example">
+											<span>.colors(@bg, @color)</span>
+											<span>demo.mixins.example</span>
+										</a>
+									</li>
+									<li class="kss-depth-2">
+										<a href="#demo.components">
+											<span>Components</span>
+											<span>demo.components</span>
+										</a>
+									</li>
+									<li class="kss-depth-3">
+										<a href="#demo.components.buttons">
+											<span>Buttons</span>
+											<span>demo.components.buttons</span>
+										</a>
+									</li>
+									<li class="kss-depth-2">
+										<a href="#demo.forms">
+											<span>Forms</span>
+											<span>demo.forms</span>
+										</a>
+									</li>
+									<li class="kss-depth-3">
+										<a href="#demo.forms.text">
+											<span>Text Input</span>
+											<span>demo.forms.text</span>
+										</a>
+									</li>
+									<li class="kss-depth-4">
+										<a href="#demo.forms.text.single-line">
+											<span>Single-Line Text Boxes</span>
+											<span>demo.forms.text.single-line</span>
+										</a>
+									</li>
+									<li class="kss-depth-4">
+										<a href="#demo.forms.text.label-pairs">
+											<span>Label/Text box Pairs</span>
+											<span>demo.forms.text.label-pairs</span>
+										</a>
+									</li>
+					</ul>
+				</nav>
+				<footer>
+					<a href="http://niepsuj.it"></a>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

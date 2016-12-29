@@ -1,0 +1,15 @@
+{
+  "name": "niepsuj-kss-template",
+  "version": "1.0.0",
+  "description": "Niepsuj.it template for kss-node",
+  "author": "niespuj.it",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-kss-node": "^1.0.4",
+    "grunt-sass": "^2.0.0",
+    "kss": "^3.0.0-beta.16",
+    "matchdep": "^1.0.1"
+  }
+}

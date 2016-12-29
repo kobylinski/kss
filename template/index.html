@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	    <meta name="HandheldFriendly" content="true">
+	    <meta name="MobileOptimized" content="320">
+    	<title>{{options.title}}</title>
+    	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    	<link rel="stylesheet" href="public/styles.css" />
+    	{{{styles}}}
+	</head>
+	<body id="kss-node">
+		<div class="kss-wrapper">
+			<div class="kss-content">
+				{{#if homepage}}
+          			<section id="section-0" class="kss-section kss-overview">
+            			{{{homepage}}}
+          			</section>
+          		{{else}}
+          			{{#eachSection rootName}}
+          				<section id="{{reference}}">
+            				<h1 class="kss-title">
+        					 	{{header}} <span class="kss-ref">#{{reference}}</span>
+        					</h1>
+            				{{#if markup}}
+            					{{#if description}}
+						            <div class="kss-description">
+										{{{description}}}
+						            </div>
+					            {{/if}}
+	            				<div class="kss-modifier-block">
+	              					<div class="kss-modifier kss-modifier-original">
+	                					<div class="kss-modifier-example">
+	                  						{{{markup}}}
+	                					</div>
+	              					</div>
+	              					{{#eachModifier}}
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">{{name}}</div>
+		                  						<div class="kss-modifier-description">
+		                    						{{{description}}}
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						{{{markup}}}
+		                					</div>
+		              					</div>
+	              					{{/eachModifier}}
+									<div class="kss-markup">
+										<pre><code class="lang-html">{{markup}}</code></pre>
+									</div>
+	            				</div>
+	            			{{else}}
+	            				{{#if description}}
+	            					<div class="kss-description">
+	              						{{{description}}}
+	            					</div>
+	            				{{/if}}
+	            			{{/if}}
+	          			</section>
+	          		{{/eachSection}}
+	          	{{/if}}
+			</div>
+			<div class="kss-sidebar">
+				<nav>
+					<ul>
+						<li class="homepage kss-depth-0{{#if homepage}} active{{/if}}">
+							<a href="./">
+								<span>Home</span>
+							</a>
+						</li>
+					    {{#eachRoot}}
+					        <li class="kss-depth-0{{#if (eq ../rootName reference)}} active{{/if}}">
+					        	<a href="section-{{reference}}.html">
+						        	<span>{{header}}</span>
+						        	<span>{{reference}}</span>
+					        	</a>
+				        	</li>
+					        {{#if (eq ../rootName reference)}}
+					        	{{#each ../../sections}}
+					        		{{#if (ne depth 1)}}
+									<li class="kss-depth-{{depth}}">
+										<a href="#{{reference}}">
+											<span>{{header}}</span>
+											<span>{{reference}}</span>
+										</a>
+									</li>
+									{{/if}}
+								{{/each}}
+					        {{/if}}
+					    {{/eachRoot}}
+					</ul>
+				</nav>
+				<footer>
+					<a href="http://niepsuj.it"></a>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
