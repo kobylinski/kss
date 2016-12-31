@@ -8,7 +8,8 @@ module.exports = function(grunt){
 				options: {
 					template: './template',
 					helpers: './template/helpers',
-					css: '../node_modules/kss/demo/styles.css'
+					css: '../node_modules/kss/demo/styles.css',
+
 				},
 				files: {
 					'example': [ './node_modules/kss/demo' ] 
