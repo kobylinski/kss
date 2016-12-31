@@ -1,3 +1,6 @@
+var hljs = require('highlight.js');
+var Handlebars = require('handlebars');
+
 module.exports.register = function(handlebars) {
 	handlebars.registerHelper({
 		eq: function (v1, v2) {
@@ -24,6 +27,18 @@ module.exports.register = function(handlebars) {
 		or: function (v1, v2) {
 			return v1 || v2;
 		}
+	});
+
+	handlebars.registerHelper('SYNTAX', function(options){
+		var output;
+		if (this.markup.endsWith('.hbs')) {
+			template = handlebars.compile('{{> ' + this.markup.replace('.hbs', '') + ' }}');
+			output = template();
+	    } else {
+	      	output = this.markup;
+	    }
+
+		return new Handlebars.SafeString(hljs.highlight('html', output).value);
 	});
 
 	handlebars.registerHelper('CSS', function(string){

@@ -17,6 +17,11 @@ module.exports = function(grunt){
 			}
 		},
 		sass: {
+			options: {
+				includePaths: [
+					'node_modules/highlight.js/styles/'
+				]
+			},
 			build: {
 				options: {
 					outputStyle: 'compact'
