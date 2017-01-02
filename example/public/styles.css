@@ -90,7 +90,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .kss-content { padding: 1em; background-color: #eaeaea; }
 
-.kss-content .kss-overview h1, .kss-content .kss-overview h2, .kss-content .kss-overview h3, .kss-content .kss-overview h4, .kss-content .kss-overview h5, .kss-content .kss-overview h6 { font-weight: 300; border-bottom: 1px solid #fff; }
+.kss-content .kss-overview h1, .kss-content .kss-overview h2, .kss-content .kss-overview h3, .kss-content .kss-overview h4, .kss-content .kss-overview h5, .kss-content .kss-overview h6 { font-weight: 300; border-bottom: 1px solid #dedede; }
 
 .kss-content .kss-overview h1 { font-size: 2em; }
 
@@ -103,6 +103,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .kss-content .kss-overview h5 { font-size: 1.2em; }
 
 .kss-content .kss-overview h6 { font-size: 1em; }
+
+.kss-content .kss-overview a { color: #ff8a00; text-decoration: none; }
 
 .kss-content .kss-title { font-weight: 300; padding: 1em 0 0 0; margin: 0; }
 
