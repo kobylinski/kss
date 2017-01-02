@@ -1,11 +1,5 @@
 body, html { height: 100%; width: 100%; padding: 0; margin: 0; font-family: "Open Sans", sans-serif; }
 
-.kss-wrapper { width: 100%; min-height: 100%; }
-
-.kss-wrapper .kss-sidebar { width: 300px; position: fixed; height: 100%; top: 0; left: 0; bottom: 0; overflow: hidden; }
-
-.kss-wrapper .kss-content { width: calc(100vh - $sidebarWidth); margin-left: 300px; box-sizing: border-box; }
-
 /*
 
 Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
@@ -41,6 +35,12 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-emphasis { font-style: italic; }
 
 .hljs-strong { font-weight: bold; }
+
+.kss-wrapper { width: 100%; min-height: 100%; }
+
+.kss-wrapper .kss-sidebar { width: 300px; position: fixed; height: 100%; top: 0; left: 0; bottom: 0; overflow: hidden; }
+
+.kss-wrapper .kss-content { margin-left: 300px; box-sizing: border-box; min-height: 100vh; }
 
 .kss-sidebar { padding-bottom: 50px; box-sizing: border-box; background-color: #444; }
 
@@ -89,6 +89,20 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .kss-sidebar > nav li.homepage.active a { color: #fff; }
 
 .kss-content { padding: 1em; background-color: #eaeaea; }
+
+.kss-content .kss-overview h1, .kss-content .kss-overview h2, .kss-content .kss-overview h3, .kss-content .kss-overview h4, .kss-content .kss-overview h5, .kss-content .kss-overview h6 { font-weight: 300; border-bottom: 1px solid #fff; }
+
+.kss-content .kss-overview h1 { font-size: 2em; }
+
+.kss-content .kss-overview h2 { font-size: 1.8em; }
+
+.kss-content .kss-overview h3 { font-size: 1.6em; }
+
+.kss-content .kss-overview h4 { font-size: 1.4em; }
+
+.kss-content .kss-overview h5 { font-size: 1.2em; }
+
+.kss-content .kss-overview h6 { font-size: 1em; }
 
 .kss-content .kss-title { font-weight: 300; padding: 1em 0 0 0; margin: 0; }
 

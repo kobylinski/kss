@@ -14,6 +14,8 @@ body, html{
 	font-family: $fonts;
 }
 
+@import 'default';
+
 .kss-wrapper{
 	width: 100%;
 	min-height: 100%;
@@ -30,10 +32,8 @@ body, html{
 	}
 
 	.kss-content{
-		width: calc(100vh - $sidebarWidth);
 		margin-left: $sidebarWidth;
 		box-sizing: border-box;
+		min-height: 100vh;
 	}
 }
-
-@import 'default';
