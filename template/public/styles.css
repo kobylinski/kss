@@ -84,7 +84,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .kss-sidebar > nav li.kss-depth-6 { padding-left: 2.5em; }
 
-.kss-sidebar > nav li.homepage { padding-top: 2em !important; margin-bottom: 0.8em !important; }
+.kss-sidebar > nav li.homepage { padding-top: 2em !important; }
 
 .kss-sidebar > nav li.homepage.active a { color: #fff; }
 
