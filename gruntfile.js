@@ -9,7 +9,7 @@ module.exports = function(grunt){
 					template: './template',
 					helpers: './template/helpers',
 					css: '../node_modules/kss/demo/styles.css',
-
+					custom: '"<a class=\"niepsuj\" href=\"http://niepsuj.it\"></a>"'
 				},
 				files: {
 					'example': [ './node_modules/kss/demo' ] 

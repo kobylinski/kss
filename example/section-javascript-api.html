@@ -61,13 +61,13 @@
 					</ul>
 				</nav>
 				<footer>
-					<a href="http://niepsuj.it"></a>
+					
 				</footer>
 			</div>
 		</div>
 		<script type="text/javascript">
 			(function(w, d, $, on){
-				var $n=$('.kss-sidebar'),$u=$('nav>ul'),$c=$('.kss-content'),o=null,c=function(){
+				var $n=$('.kss-sidebar'),$u=$('.kss-sidebar>nav>ul'),$c=$('.kss-content'),o=null,c=function(){
 					return o!==null||(o=setTimeout(function(){
 						var h=$n.offsetHeight,s=w.scrollY,h1=$c.offsetHeight,h2=$u.offsetHeight;
 						$u.style.transform='translateY(-'+parseInt(((h2-(h-80))*s)/(h1-h))+'px)';o = null;},1));
