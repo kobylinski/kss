@@ -15,7 +15,7 @@
   },
   "scripts": {
     "sass": "node-sass --output-style compressed --include-path node_modules/highlight.js/styles/ kss-assets/styles.css kss-assets/styles.css",
-    "example": "kss --source ./node_modules/kss/demo --destination example --builder ./ --custom '<a class=\"niepsuj\" href=\"http://niepsuj.it\"></a>'"
+    "example": "kss --source ./node_modules/kss/demo --destination docs --builder ./ --custom '<a class=\"niepsuj\" href=\"http://niepsuj.it\"></a>'"
   },
   "repository": {
     "type": "git",
