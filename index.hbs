@@ -14,12 +14,14 @@
 	<body id="kss-node">
 		<div class="kss-wrapper">
 			<div class="kss-content">
-				{{#if homepage}}
-          			<section id="section-0" class="kss-section kss-overview">
-            			{{{homepage}}}
-          			</section>
+				{{#if template.isHomepage }}
+					{{#if homepage}}
+	          			<section id="section-0" class="kss-section kss-overview">
+	            			{{{homepage}}}
+	          			</section>
+	          		{{/if}}
           		{{else}}
-          			{{#eachSection rootName}}
+          			{{#each sections}}
           				<section id="{{reference}}">
             				<h1 class="kss-title">
         					 	{{header}} <span class="kss-ref">#{{reference}}</span>
@@ -61,7 +63,7 @@
 	            				{{/if}}
 	            			{{/if}}
 	          			</section>
-	          		{{/eachSection}}
+	          		{{/each}}
 	          	{{/if}}
 			</div>
 			<div class="kss-sidebar">
@@ -72,26 +74,26 @@
 								<span>Home</span>
 							</a>
 						</li>
-					    {{#eachRoot}}
+					    {{#each menu}}
 					        <li class="kss-depth-0{{#if (eq ../rootName reference)}} active{{/if}}">
 					        	<a href="section-{{reference}}.html">
 						        	<span>{{header}}</span>
 						        	<span>#{{reference}}</span>
 					        	</a>
 				        	</li>
-					        {{#if (eq ../rootName reference)}}
-					        	{{#each ../../sections}}
-					        		{{#if (ne depth 1)}}
-									<li class="kss-depth-{{depth}}">
-										<a href="#{{reference}}">
-											<span>{{header}}</span>
-											<span>#{{reference}}</span>
-										</a>
-									</li>
-									{{/if}}
-								{{/each}}
-					        {{/if}}
-					    {{/eachRoot}}
+				        	{{#if isActive}}
+          						{{#if children}}
+          							{{#each children}}
+										<li class="kss-depth-{{depth}}">
+											<a href="#{{reference}}">
+												<span>{{header}}</span>
+												<span>#{{reference}}</span>
+											</a>
+										</li>
+          							{{/each}}
+          						{{/if}}
+      						{{/if}}
+					    {{/each}}
 					</ul>
 				</nav>
 				<footer>
