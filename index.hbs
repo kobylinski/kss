@@ -38,7 +38,7 @@
 	                  						{{{markup}}}
 	                					</div>
 	              					</div>
-	              					{{#eachModifier}}
+	              					{{#each modifiers}}
 		          						<div class="kss-modifier">
 		                					<div class="kss-modifier-head">
 		                  						<div class="kss-modifier-name">{{name}}</div>
@@ -50,10 +50,12 @@
 		                  						{{{markup}}}
 		                					</div>
 		              					</div>
-	              					{{/eachModifier}}
+	              					{{/each}}
+	              					{{#if markup}}
 									<div class="kss-markup">
 										<pre><code class="lang-html">{{SYNTAX}}</code></pre>
 									</div>
+									{{/if}}
 	            				</div>
 	            			{{else}}
 	            				{{#if description}}
