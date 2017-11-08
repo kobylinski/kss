@@ -1,0 +1,95 @@
+.kss-content{
+	padding: 1em;
+	background-color: #eaeaea;
+	section{
+	}
+
+	.kss-overview{
+		h1, h2, h3, h4, h5, h6{
+			font-weight: 300;
+			border-bottom: 1px solid #dedede;
+		}
+
+		h1{
+			font-size: 2em;
+		}
+
+		h2{
+			font-size: 1.8em;
+		}
+
+		h3{
+			font-size: 1.6em;
+		}
+
+		h4{
+			font-size: 1.4em;
+		}
+
+		h5{
+			font-size: 1.2em;
+		}
+
+		h6{
+			font-size: 1em;
+		}
+
+		a{
+			color: #ff8a00;
+			text-decoration: none;
+		}
+	}
+
+	.kss-title{
+		font-weight: 300;
+		padding: 1em 0 0 0;
+		margin: 0;
+
+		.kss-ref{
+			color: $gray;
+			font-size: 0.5em;
+		}
+
+	}
+
+	.kss-description{
+		color: $gray;
+		font-size: 0.8em;
+
+		a{
+			color: $orange;
+		}
+	}
+
+	.kss-modifier-block{
+		margin-top: 1em;
+		padding: 2em;
+		background-color: #fff;
+
+		.kss-modifier{
+			padding: 1em 0 1em 0;
+		}
+
+		.kss-modifier-original{
+			padding-top: 0;
+		}
+
+		.kss-modifier-name{
+			font-family: $fontsMono;
+			color: $gray;
+		}
+
+		.kss-modifier-description{
+			font-size: 0.8em;
+			color: $gray;
+			padding-bottom: 0.5em;
+		}
+
+		.kss-markup{
+			padding: 1em 0;
+			font-family: $fontsMono;
+			color: $gray;
+			font-size: 0.8em;
+		}
+	}
+}
