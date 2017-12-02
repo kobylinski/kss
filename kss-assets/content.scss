@@ -69,8 +69,16 @@
 				color: $gray;
 			}
 
+			td{
+				border-bottom: 1px dotted #fff;
+
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
+
 			td,th{
-				padding: 0 0.5em;
+				padding: 0.5em 1em;
 			}
 		}
 	}
