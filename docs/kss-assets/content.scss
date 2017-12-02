@@ -59,6 +59,20 @@
 		a{
 			color: $orange;
 		}
+
+		table{
+			border-collapse: collapse;
+			border: 1px solid #fff;
+
+			th{
+				background-color: #fff;
+				color: $gray;
+			}
+
+			td,th{
+				padding: 0 0.5em;
+			}
+		}
 	}
 
 	.kss-modifier-block{

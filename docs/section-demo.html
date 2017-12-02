@@ -79,6 +79,76 @@ So far this just includes buttons.</p>
 
 	                					</div>
 	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.primary</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class to indicate that the button is the primary feature of this form.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button primary">Link Button</a>
+<button class="button primary">Button Element</button>
+<input type="button" class="button primary" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.remove</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class to indicate that the button will remove a feature, or other negative connotations.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button remove">Link Button</a>
+<button class="button remove">Button Element</button>
+<input type="button" class="button remove" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:hover</div>
+		                  						<div class="kss-modifier-description">
+		                    						Highlight the button when hovered.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button pseudo-class-hover">Link Button</a>
+<button class="button pseudo-class-hover">Button Element</button>
+<input type="button" class="button pseudo-class-hover" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:disabled</div>
+		                  						<div class="kss-modifier-description">
+		                    						Make the button change appearance to reflect it being disabled.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button pseudo-class-disabled">Link Button</a>
+<button class="button pseudo-class-disabled">Button Element</button>
+<input type="button" class="button pseudo-class-disabled" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:active</div>
+		                  						<div class="kss-modifier-description">
+		                    						&quot;Press&quot; the button down when clicked.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<a href="#" class="button pseudo-class-active">Link Button</a>
+<button class="button pseudo-class-active">Button Element</button>
+<input type="button" class="button pseudo-class-active" value="input[type='button']"/>
+
+		                					</div>
+		              					</div>
 									<div class="kss-markup">
 										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button {{modifier_class}}"</span>&gt;</span>Link Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button {{modifier_class}}"</span>&gt;</span>Button Element<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
@@ -149,6 +219,39 @@ So far this just includes buttons.</p>
 	                  						<input type="text" class="[modifier class]" value="Text input"/>
 	                					</div>
 	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:hover</div>
+		                  						<div class="kss-modifier-description">
+		                    						Highlight the text box when hovering
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<input type="text" class="pseudo-class-hover" value="Text input"/>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:focus</div>
+		                  						<div class="kss-modifier-description">
+		                    						Similar to <code>:hover</code>, however it should demand more attention than when an input is simply hovered.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<input type="text" class="pseudo-class-focus" value="Text input"/>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">:disabled</div>
+		                  						<div class="kss-modifier-description">
+		                    						When disabled, the input&#39;s appearance should reflect as such.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<input type="text" class="pseudo-class-disabled" value="Text input"/>
+		                					</div>
+		              					</div>
 									<div class="kss-markup">
 										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class]"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Text input"</span>/&gt;</span></code></pre>
 									</div>
@@ -171,6 +274,45 @@ both layout convenience and specific styling.</p>
   <input type="text" class="" value="Text input"/></div>
 	                					</div>
 	              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.disabled</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class when the text input inside is expected to be disabled.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="mod-input text disabled">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.invalid</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class if the input has failed a validation check.
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="mod-input text invalid">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+		                					</div>
+		              					</div>
+		          						<div class="kss-modifier">
+		                					<div class="kss-modifier-head">
+		                  						<div class="kss-modifier-name">.valid</div>
+		                  						<div class="kss-modifier-description">
+		                    						Use this class if the input has passed a validation check (intended for live validation in particular).
+		                  						</div>
+		                					</div>
+		                					<div class="kss-modifier-example">
+		                  						<div class="mod-input text valid">
+  <label>Text Label</label>
+  <input type="text" class="" value="Text input"/></div>
+		                					</div>
+		              					</div>
 									<div class="kss-markup">
 										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mod-input text [modifier class]"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Text Label<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
