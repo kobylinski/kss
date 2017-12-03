@@ -20,20 +20,53 @@ body, html{
 	width: 100%;
 	min-height: 100%;
 
-
 	.kss-sidebar{
 		width: $sidebarWidth;
 		position: fixed;
 		height: 100%;
 		top:0;
-		left: 0;
+		left: -$sidebarWidth;
 		bottom: 0;
-		overflow: hidden;
+		transition: left 0.3s ease;
+
+		&:after{
+			content: '\00BB';
+			width: 40px;
+			height: 40px;
+			background: $orange;
+			right: -40px;
+			top: 0;
+			display: block;
+			position: absolute;
+			color: #fff;
+			line-height: 32px;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		&:active, &:hover{
+			left: 0;
+		}
+
+
+		@media only screen and (min-width: 1024px){
+			left: 0;
+			overflow: hidden;
+
+			&:after{
+				display: none;
+			}
+		}
 	}
 
 	.kss-content{
-		margin-left: $sidebarWidth;
 		box-sizing: border-box;
 		min-height: 100vh;
+		margin-left: 0;
+		transition: margin-left 0.3s ease;
+		@media only screen and (min-width: 1024px){
+			margin-left: $sidebarWidth;
+		}
 	}
 }
