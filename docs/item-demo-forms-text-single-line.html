@@ -1,113 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	    <meta name="HandheldFriendly" content="true">
-	    <meta name="MobileOptimized" content="320">
-    	<title>KSS Style Guide</title>
-    	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-    	<link rel="stylesheet" href="kss-assets/styles.css">
-    	
-	</head>
-	<body id="kss-node">
-		<div class="kss-wrapper">
-			<div class="kss-content">
-          				<section id="demo.forms.text.single-line">
-            				<h1 class="kss-title">
-        					 	Single-Line Text Boxes <span class="kss-ref">#demo.forms.text.single-line</span>
-        					</h1>
-						            <div class="kss-description">
-										<p>Your standard, everyday text boxes.</p>
 
-						            </div>
-	            				<div class="kss-modifier-block">
-	              					<div class="kss-modifier kss-modifier-original">
-	                					<div class="kss-modifier-example">
-	                  						<input type="text" class="[modifier class]" value="Text input"/>
-	                					</div>
-	              					</div>
-		          						<div class="kss-modifier">
-		                					<div class="kss-modifier-head">
-		                  						<div class="kss-modifier-name">:hover</div>
-		                  						<div class="kss-modifier-description">
-		                    						Highlight the text box when hovering
-		                  						</div>
-		                					</div>
-		                					<div class="kss-modifier-example">
-		                  						<input type="text" class="pseudo-class-hover" value="Text input"/>
-		                					</div>
-		              					</div>
-		          						<div class="kss-modifier">
-		                					<div class="kss-modifier-head">
-		                  						<div class="kss-modifier-name">:focus</div>
-		                  						<div class="kss-modifier-description">
-		                    						Similar to <code>:hover</code>, however it should demand more attention than when an input is simply hovered.
-		                  						</div>
-		                					</div>
-		                					<div class="kss-modifier-example">
-		                  						<input type="text" class="pseudo-class-focus" value="Text input"/>
-		                					</div>
-		              					</div>
-		          						<div class="kss-modifier">
-		                					<div class="kss-modifier-head">
-		                  						<div class="kss-modifier-name">:disabled</div>
-		                  						<div class="kss-modifier-description">
-		                    						When disabled, the input&#39;s appearance should reflect as such.
-		                  						</div>
-		                					</div>
-		                					<div class="kss-modifier-example">
-		                  						<input type="text" class="pseudo-class-disabled" value="Text input"/>
-		                					</div>
-		              					</div>
-									<div class="kss-markup">
-										<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"[modifier class]"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Text input"</span>/&gt;</span></code></pre>
-									</div>
-	            				</div>
-	          			</section>
-			</div>
-			<div class="kss-sidebar">
-				<nav>
-					<ul>
-						<li class="homepage kss-depth-0">
-							<a href="./">
-								<span>Home</span>
-							</a>
-						</li>
-					        <li class="kss-depth-0">
-					        	<a href="section-spec.html">
-						        	<span>KSS Spec</span>
-						        	<span>#spec</span>
-					        	</a>
-				        	</li>
-					        <li class="kss-depth-0">
-					        	<a href="section-javascript-api.html">
-						        	<span>JavaScript API</span>
-						        	<span>#javascript-api</span>
-					        	</a>
-				        	</li>
-					        <li class="kss-depth-0">
-					        	<a href="section-demo.html">
-						        	<span>Demo</span>
-						        	<span>#demo</span>
-					        	</a>
-				        	</li>
-					</ul>
-				</nav>
-				<footer>
-					<a class="niepsuj" href="http://niepsuj.it"></a>
-				</footer>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<title>KSS Style Guide</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext"
+		rel="stylesheet">
+	<link rel="stylesheet" href="kss-assets/styles.css">
+	<link rel="stylesheet" href="/node_modules/kss/demo/styles.css">
+</head>
+
+<body id="kss-node">
+	<div class="kss-wrapper">
+		<div class="kss-content">
+			<section id="demo.forms.text.single-line">
+				<h1 class="kss-title">
+					Single-Line Text Boxes <span class="kss-ref">#demo.forms.text.single-line</span>
+				</h1>
+				<div class="kss-description">
+					<p>Your standard, everyday text boxes.</p>
+
+				</div>
+				<div class="kss-modifier-block">
+					<div class="kss-modifier kss-modifier-original">
+						<div class="kss-modifier-example">
+							<input type="text" class="[modifier class]" value="Text input"/>
+						</div>
+					</div>
+					<div class="kss-modifier">
+						<div class="kss-modifier-head">
+							<div class="kss-modifier-name">:hover</div>
+							<div class="kss-modifier-description">
+								Highlight the text box when hovering
+							</div>
+						</div>
+						<div class="kss-modifier-example">
+							<input type="text" class="pseudo-class-hover" value="Text input"/>
+						</div>
+					</div>
+					<div class="kss-modifier">
+						<div class="kss-modifier-head">
+							<div class="kss-modifier-name">:focus</div>
+							<div class="kss-modifier-description">
+								Similar to <code>:hover</code>, however it should demand more attention than when an input is simply hovered.
+							</div>
+						</div>
+						<div class="kss-modifier-example">
+							<input type="text" class="pseudo-class-focus" value="Text input"/>
+						</div>
+					</div>
+					<div class="kss-modifier">
+						<div class="kss-modifier-head">
+							<div class="kss-modifier-name">:disabled</div>
+							<div class="kss-modifier-description">
+								When disabled, the input's appearance should reflect as such.
+							</div>
+						</div>
+						<div class="kss-modifier-example">
+							<input type="text" class="pseudo-class-disabled" value="Text input"/>
+						</div>
+					</div>
+					<div class="kss-markup">
+						<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;[modifier class]&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Text input&quot;</span>/&gt;</span></code></pre>
+					</div>
+				</div>
+				<div class="kss-source">
+					Source: <code>node_modules/kss/demo/forms/base.less</code>, line 8
+				</div>
+			</section>
 		</div>
-		<script type="text/javascript">
-			(function(w, d, $, on){
-				var $n=$('.kss-sidebar'),$u=$('.kss-sidebar>nav>ul'),$c=$('.kss-content'),o=null,c=function(){
-					return o!==null||(o=setTimeout(function(){
-						var h=$n.offsetHeight,s=w.scrollY,h1=$c.offsetHeight,h2=$u.offsetHeight;
-						$u.style.transform='translateY(-'+parseInt(((h2-(h-80))*s)/(h1-h))+'px)';o = null;},1));
-				};on('scroll', c);on('resize', c);
-			})(window, document, document.querySelector.bind(document), window.addEventListener.bind(window))
-		</script>
-	</body>
+		<div class="kss-sidebar">
+			<nav>
+				<ul>
+					<li class="homepage kss-depth-0">
+						<a href="./">
+							<span>Home</span>
+						</a>
+					</li>
+					<li class="kss-depth-0">
+						<a href="section-spec.html">
+							<span>KSS Spec</span>
+							<span>#spec</span>
+						</a>
+					</li>
+					<li class="kss-depth-0">
+						<a href="section-javascript-api.html">
+							<span>JavaScript API</span>
+							<span>#javascript-api</span>
+						</a>
+					</li>
+					<li class="kss-depth-0">
+						<a href="section-demo.html">
+							<span>Demo</span>
+							<span>#demo</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<footer>
+				
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript">
+		(function (w, d, $, $$, on, el) {
+			var $n = $('.kss-sidebar'), $u = $('.kss-sidebar>nav>ul'), $c = $('.kss-content'), o = null, c = function () {
+				return o !== null || (o = setTimeout(function () {
+					var h = $n.offsetHeight, s = w.scrollY, h1 = $c.offsetHeight, h2 = $u.offsetHeight;
+					$u.style.transform = 'translateY(-' + parseInt(((h2 - (h - 80)) * s) / (h1 - h)) + 'px)'; o = null;
+				}, 1));
+			}; on('scroll', c); on('resize', c);
+
+			var previews = $$('.preview-pages figure'), i = previews.length;
+			for (; i--;) {
+				previews[i].addEventListener('click', function (e) {
+					var img = e.currentTarget, doc = el('div'), docInner = el('div'), image = img.cloneNode(true), close = el('a');
+					doc.classList.add('preview-large');
+					docInner.classList.add('preview-inner');
+					doc.appendChild(docInner);
+					docInner.appendChild(image);
+					close.innerHTML = '&times;';
+					close.classList.add('preview-close');
+					docInner.appendChild(close);
+					close.addEventListener('click', function (e) {
+						d.body.removeChild(doc);
+					});
+					d.body.appendChild(doc);
+				});
+			}
+		})(window, document, document.querySelector.bind(document), document.querySelectorAll.bind(document), window.addEventListener.bind(window), document.createElement.bind(document));
+	</script>
+</body>
+
 </html>

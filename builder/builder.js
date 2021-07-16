@@ -1,9 +1,10 @@
 'use strict';
 
-const HandlebarsBuilder = require('kss/builder/handlebars');
+const KssBuilderHandlebars = require('kss/builder/handlebars');
 const hljs = require('highlight.js');
 
-class Builder extends HandlebarsBuilder {
+
+class Builder extends KssBuilderHandlebars {
 
   prepare(styleGuide) {
     return super.prepare(styleGuide).then(styleGuide => {
@@ -45,7 +46,7 @@ class Builder extends HandlebarsBuilder {
 		    } else {
 		      	output = this.markup;
 		    }
-			return new _hbs.SafeString(hljs.highlight('html', output).value);
+			return new _hbs.SafeString(hljs.highlight(output, {language: 'html'}).value);
 		});
 
 		this.Handlebars.registerHelper('CSS', function(string){
