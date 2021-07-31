@@ -1,6 +1,6 @@
 {
   "name": "niepsuj-kss-template",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "description": "Template for kss-node",
   "author": "kobylinski <marek@kobylinski.co>",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "serve": "^12.0.0"
   },
   "scripts": {
-    "sass": "sass --style=compressed --load-path=node_modules/highlight.js/styles/ kss-assets/styles.scss kss-assets/styles.css",
+    "build": "sass --style=compressed --load-path=node_modules/highlight.js/styles/ builder/kss-assets/styles.scss builder/kss-assets/styles.css",
     "example": "kss --source ./node_modules/kss/demo --destination docs --builder builder --css /node_modules/kss/demo/styles.css --homepage ./node_modules/kss/demo/homepage.md",
     "serve": "serve ./"
   },

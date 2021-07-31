@@ -1,10 +1,25 @@
 'use strict';
 
-const KssBuilderHandlebars = require('kss/builder/handlebars');
+const KssBuilderBase = require('kss/builder/base/handlebars');
 const hljs = require('highlight.js');
 
 
-class Builder extends KssBuilderHandlebars {
+class Builder extends KssBuilderBase {
+
+	constructor() {
+    super();
+
+    // Store the version of the builder API that the builder instance is
+    // expecting; we will verify this in loadBuilder().
+    this.API = '3.0';
+
+    // this.addOptionDefinitions({
+    //   'example-option': {
+    //     string: true,
+    //     description: 'This is a custom command-line option used by this Builder.'
+    //   }
+    // });
+  }
 
   prepare(styleGuide) {
     return super.prepare(styleGuide).then(styleGuide => {
