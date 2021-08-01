@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext"
+		rel="stylesheet">
+	<link rel="stylesheet" href="kss-assets/styles.css">
+		<link rel="stylesheet" href="./node_modules/kss/demo/styles.css">
+		<link rel="stylesheet" href="/custom.css">
+</head>
+
+<body id="kss-node" ontouchstart="">
+	<div class="kss-wrapper">
+		<div class="kss-content">
+			<section id="demo.colors">
+				<h1 class="kss-title">
+					Colors <span class="kss-ref">#demo.colors</span>
+				</h1>
+				<div class="kss-source">
+					Source: <code>node_modules/kss/demo/styles.less</code>, line 1
+				</div>
+			</section>
+		</div>
+		<div class="kss-sidebar">
+			<div class="kss-sidebar-trigger"></div>
+			<nav>
+				<ul>
+					<li class="homepage kss-depth-0">
+						<a href="./">
+							<span>Home</span>
+						</a>
+					</li>
+					<li class="kss-depth-0">
+						<a href="section-spec.html">
+							<span>KSS Spec</span>
+							<span>#spec</span>
+						</a>
+					</li>
+					<li class="kss-depth-0">
+						<a href="section-javascript-api.html">
+							<span>JavaScript API</span>
+							<span>#javascript-api</span>
+						</a>
+					</li>
+					<li class="kss-depth-0">
+						<a href="section-demo.html">
+							<span>Demo</span>
+							<span>#demo</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+				<footer>
+					<div class="custom-footer">
+  <div class="custom-footer__code">yarn add niepsuj-kss-template</div>
+  <small>Template for kss-node v1.2.4</small>
+  <small>kobylinski <<a href="mailto:marek@kobylinski.co">marek@kobylinski.co</a>></small>
+</div>
+				</footer>
+		</div>
+	</div>
+		<script src="/demo.js"></script>
+		<script src="/demo2.js"></script>
+	<script type="text/javascript">
+		(function (w, d, $, $$, on, el) {
+			var $n = $('.kss-sidebar'), $u = $('.kss-sidebar>nav>ul'), $c = $('.kss-content'), o = null, c = function () {
+				return o !== null || (o = setTimeout(function () {
+					var h = $n.offsetHeight, s = w.scrollY, h1 = $c.offsetHeight, h2 = $u.offsetHeight;
+					$u.style.transform = 'translateY(-' + parseInt(((h2 - (h - 80)) * s) / (h1 - h)) + 'px)'; o = null;
+				}, 1));
+			}; on('scroll', c); on('resize', c);
+
+			var previews = $$('.preview-pages figure'), i = previews.length;
+			for (; i--;) {
+				previews[i].addEventListener('click', function (e) {
+					var img = e.currentTarget, doc = el('div'), docInner = el('div'), image = img.cloneNode(true), close = el('a');
+					doc.classList.add('preview-large');
+					docInner.classList.add('preview-inner');
+					doc.appendChild(docInner);
+					docInner.appendChild(image);
+					close.innerHTML = '&times;';
+					close.classList.add('preview-close');
+					docInner.appendChild(close);
+					close.addEventListener('click', function (e) {
+						d.body.removeChild(doc);
+					});
+					d.body.appendChild(doc);
+				});
+			}
+		})(window, document, document.querySelector.bind(document), document.querySelectorAll.bind(document), window.addEventListener.bind(window), document.createElement.bind(document));
+	</script>
+</body>
+
+</html>
