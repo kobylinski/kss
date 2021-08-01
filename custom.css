@@ -1,0 +1,22 @@
+.custom-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  font-weight: 400;
+  height: 100%;
+  padding-left: 1rem;
+}
+.custom-footer a {
+  color: #fff;
+}
+.custom-footer small {
+  font-size: 0.5rem;
+  opacity: 0.6;
+}
+.custom-footer__code {
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 700;
+}

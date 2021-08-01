@@ -10,12 +10,13 @@
   },
   "main": "builder.js",
   "dependencies": {
+    "app-root-path": "^3.0.0",
     "highlight.js": "^11.1.0",
     "serve": "^12.0.0"
   },
   "scripts": {
     "build": "sass --style=compressed --load-path=node_modules/highlight.js/styles/ builder/kss-assets/styles.scss builder/kss-assets/styles.css",
-    "example": "kss --source ./node_modules/kss/demo --destination docs --builder builder --css /node_modules/kss/demo/styles.css --homepage ./node_modules/kss/demo/homepage.md",
+    "example": "kss --source ./node_modules/kss/demo --custom ./footer.hbs --destination docs --builder builder --css ./node_modules/kss/demo/styles.css --css /custom.css --homepage ./node_modules/kss/demo/homepage.md --js /demo.js --js /demo2.js",
     "serve": "serve ./"
   },
   "repository": {

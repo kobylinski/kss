@@ -11,7 +11,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Open+Sans:300,400,600,700&amp;subset=latin-ext"
 		rel="stylesheet">
 	<link rel="stylesheet" href="kss-assets/styles.css">
-	{{{CSS options.css}}}
+	{{#each options.css}}
+		<link rel="stylesheet" href="{{this}}">
+	{{/each}}
 </head>
 
 <body id="kss-node" ontouchstart="">
@@ -107,13 +109,17 @@
 					{{/each}}
 				</ul>
 			</nav>
-			<footer>
-				{{{options.custom}}}
-			</footer>
+			{{#if options.custom}}
+				<footer>
+					{{{CUSTOM "footer" options.custom}}}
+				</footer>
+			{{/if}}
 		</div>
 	</div>
 	{{#if options.js}}
-	{{{JS options.js}}}
+	{{#each options.js}}
+		<script src="{{this}}"></script>
+	{{/each}}
 	{{/if}}
 	<script type="text/javascript">
 		(function (w, d, $, $$, on, el) {
