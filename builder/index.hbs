@@ -14,7 +14,7 @@
 	{{{CSS options.css}}}
 </head>
 
-<body id="kss-node">
+<body id="kss-node" ontouchstart="">
 	<div class="kss-wrapper">
 		<div class="kss-content">
 			{{#if template.isHomepage }}
@@ -77,6 +77,7 @@
 			{{/if}}
 		</div>
 		<div class="kss-sidebar">
+			<div class="kss-sidebar-trigger"></div>
 			<nav>
 				<ul>
 					<li class="homepage kss-depth-0{{#if homepage}} active{{/if}}">
