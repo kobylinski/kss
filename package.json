@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "sass --style=compressed --load-path=node_modules/highlight.js/styles/ builder/kss-assets/styles.scss builder/kss-assets/styles.css",
-    "example": "kss --source ./node_modules/kss/demo --custom ./footer.hbs --destination docs --builder builder --css https://rawcdn.githack.com/kobylinski/kss/5fc947bb3ba902adc6a2108dd1ec48c1dbd701ea/custom.css --homepage ./node_modules/kss/demo/homepage.md",
+    "example": "kss --source ./node_modules/kss/demo --custom ./footer.hbs --destination docs --builder builder --css http://kss-node.github.io/kss-node/styles.css --css https://rawcdn.githack.com/kobylinski/kss/5fc947bb3ba902adc6a2108dd1ec48c1dbd701ea/custom.css --homepage ./node_modules/kss/demo/homepage.md",
     "serve": "serve ./"
   },
   "repository": {
